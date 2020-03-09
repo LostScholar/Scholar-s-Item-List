@@ -198,16 +198,13 @@
 		    		itemData.push(value);
 		    	}
 		    });
-
 		  var itemList = new List('items', options, itemData);
 		});
-
 		$.getJSON( eventListURL, function( data ) {
 		  var options = {
 		      valueNames: ['abr', 'price', 'karmatype'],
 		      item: '<tr><td class="abr" scope="row"></td><td class="price"></td><td class="karmatype"></td></tr>'
 		    };
-
 	      var eventData = [];
 	      $.each(data.incitems, function(index, value)
 	      {
@@ -216,7 +213,6 @@
       			eventData.push(value);
       		}
 	      });
-
 		  var itemList = new List('events', options, eventData);
 		});
 	</script>
