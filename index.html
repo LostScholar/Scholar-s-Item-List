@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     <title>Example's Item List</title>
     <script type="text/javascript">
-    	var 'itemListURL' = "https://raw.githubusercontent.com/LostScholar/Scholar-s-Item-List/master/itemlist.json";
+    	var itemListURL = "https://raw.githubusercontent.com/LostScholar/Scholar-s-Item-List/master/itemlist.json";
     	var eventListURL = "https://raw.githubusercontent.com/LostScholar/Scholar-s-Item-List/master/eventlist.json";
     </script>
 	  <style>
@@ -189,7 +189,7 @@ body { color: #fff !important; background-color: #000 !important; }
 	}
 	</style>
 	<script type="text/javascript">
-		$.getJSON( 'itemListURL', function( data ) {
+		$.getJSON( itemListURL, function( data ) {
 		  var options = {
 		      valueNames: ['abr', 'price'],
 		      item: '<tr><td class="abr" scope="row"></td><td class="price"></td></tr>'
